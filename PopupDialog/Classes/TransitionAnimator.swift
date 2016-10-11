@@ -53,6 +53,7 @@ internal class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
             from = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
             let container = transitionContext.containerView
             container.addSubview(to.view)
+            
         case .out:
             to = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
             from = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
